@@ -1,41 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Blog Posts</title>
-
-  <!-- 统一样式：路径与其他页面一致 -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Showdown：用 jsDelivr（国内可用性较好）；失败时有降级提示 -->
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入 Showdown.js 用于 Markdown 转换 -->
   <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
-
-  <!-- 页面脚本（统一放根目录或 assets/script.js，并用 defer） -->
   <script src="script.js" defer></script>
-
-  <!-- 基本的内联兜底样式（非覆盖，只在外部 CSS 失效时提供最小保证） -->
-  <style>
-    /* 只有当外部 style.css 加载失败时，这段保障最小可用的布局 */
-    nav ul.navbar {
-      list-style: none; margin: 0; padding: 10px 0;
-      display: flex; justify-content: center; align-items: center;
-      background: #333;
-    }
-    nav ul.navbar li { margin: 0 20px; }
-    nav ul.navbar li a {
-      color: #fff; text-decoration: none; font-weight: bold;
-      font-size: 16px; padding: 8px 16px;
-    }
-    .container { display: flex; margin: 20px; }
-    .blog { background: #fff; padding: 20px; border-radius: 8px; flex: 1; }
-    #posts .post { border-bottom: 1px solid #ddd; padding: 12px 0; }
-    #posts .post h2 { margin: 0 0 4px; }
-    #posts .post small { color: #666; }
-  </style>
 </head>
 <body>
-  <!-- 统一导航栏（与 index.html / cv.html / publication.html 完全一致） -->
+  <!-- 顶部导航栏（保持和其他页面一致） -->
   <nav>
     <ul class="navbar">
       <li><a href="index.html">Home</a></li>
@@ -45,39 +19,17 @@
     </ul>
   </nav>
 
-  <!-- 主体容器 -->
+  <!-- 主体内容 -->
   <div class="container">
     <main class="blog">
-      <h1>My Blog Posts</h1>
+      <!-- 调整标题大小和显示效果 -->
+      <h1 style="font-size:24px; text-align:center; margin:20px 0; color:#333;">
+        My Blog Posts
+      </h1>
 
-      <!-- 这里是脚本渲染的目标容器，ID 必须是 posts -->
+      <!-- 日志展示区 -->
       <div id="posts"></div>
-
-      <!-- 如果 Markdown 转换库未加载成功，给出可见提示 -->
-      <div id="md-warning" style="display:none; margin-top:12px; color:#b00;">
-        Markdown 转换库未加载成功，日志可能无法渲染。请检查网络或改用本地文件引入。
-      </div>
     </main>
   </div>
-
-  <!-- 小段内联自检脚本：帮助你快速定位“库或脚本未加载”的问题 -->
-  <script>
-    // 1) 检查 Showdown 是否加载
-    (function checkShowdown() {
-      var ok = !!window.showdown;
-      document.getElementById('md-warning').style.display = ok ? 'none' : 'block';
-    })();
-
-    // 2) 检查外部 CSS 是否加载（通过比较计算样式是否生效）
-    (function checkCSS() {
-      var nav = document.querySelector('nav ul.navbar');
-      var cs = window.getComputedStyle(nav);
-      var isFlex = cs.display === 'flex';
-      // 若不是 flex，说明外部 CSS 可能没加载或被覆盖，这时保留内联兜底样式
-      if (!isFlex) {
-        console.warn('外部 CSS 未生效或被覆盖，已使用兜底样式。请检查 style.css 路径与缓存。');
-      }
-    })();
-  </script>
 </body>
 </html>
