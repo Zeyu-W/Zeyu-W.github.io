@@ -2,10 +2,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const postsDiv = document.getElementById("posts");
   const converter = new showdown.Converter();
 
-  // 这里手动列出日志文件，可以改成自动生成
+  // 手动列出日志文件
   const postFiles = [
     "posts/2025-12-17-first.md"
-    // 以后新增日志就在这里加文件名
   ];
 
   for (const file of postFiles) {
