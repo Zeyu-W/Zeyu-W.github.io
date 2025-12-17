@@ -20,11 +20,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       let content = text;
 
       if (metaMatch) {
-        const meta = metaMatch[1].trim().split("\n");
-        meta.forEach(line => {
-          const [key, value] = line.split(":").map(s => s.trim());
-          if (key === "title") title = value;
-          if (key === "date") date = value;
+        const metaLines = metaMatch[1].trim().split("\n");
+        metaLines.forEach(line => {
+          const parts = line.split(":");
+          if (parts.length >= 2) {
+            const key = parts[0].trim().toLowerCase();
+            const value = parts.slice(1).join(":").trim();
+            if (key === "title") title = value;
+            if (key === "date") date = value;
+          }
         });
         content = text.replace(metaMatch[0], "").trim();
       }
