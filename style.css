@@ -1,9 +1,12 @@
+/* 全局基础样式 */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f9f9f9;
+  color: #333;
 }
 
+/* 导航栏样式 */
 nav {
   background: #333;
   padding: 10px;
@@ -11,10 +14,11 @@ nav {
 
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: flex-start;
   margin: 0;
   padding: 0;
+  display: flex;              /* 横向排列 */
+  justify-content: flex-start; /* 左对齐，可改成 center */
+  align-items: center;
 }
 
 nav ul li {
@@ -24,13 +28,23 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  transition: background 0.3s;
 }
 
+nav ul li a:hover {
+  background: #555;
+  border-radius: 4px;
+}
+
+/* 页面主体布局 */
 .container {
   display: flex;
   margin: 20px;
 }
 
+/* 左侧信息栏 */
 .sidebar {
   width: 250px;
   background: #eee;
@@ -52,10 +66,68 @@ nav ul li a {
   margin: 5px 0;
 }
 
+/* 右侧介绍区 */
 .intro {
   flex: 1;
   margin-left: 20px;
   background: white;
   padding: 20px;
   border-radius: 8px;
+}
+
+/* 博客页面样式 */
+.blog {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.new-post {
+  margin-bottom: 30px;
+}
+
+#posts .post {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+#posts .post h2 {
+  margin: 0;
+  color: #333;
+}
+
+#posts .post small {
+  color: #666;
+}
+
+#posts .post p {
+  margin: 5px 0;
+}
+
+/* 管理员页面样式 */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form textarea,
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+form button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #555;
 }
