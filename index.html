@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>我的个人主页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeyu's Blog</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #0a2a43;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #133b5c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+    .sidebar {
+      width: 25%;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .content {
+      width: 75%;
+      padding: 20px;
+    }
+    .post {
+      margin-bottom: 30px;
+    }
+    .post h2 {
+      color: #0a2a43;
+    }
+    footer {
+      background-color: #0a2a43;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>欢迎来到我的主页</h1>
-  <p>这里是Zeyu的研究与写作空间。</p>
+  <header>
+    <h1>Zeyu's Academic Blog</h1>
+    <p>Research, Writing, and Insights</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Publications</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="container">
+    <aside class="sidebar">
+      <h3>About Me</h3>
+      <p>Academic researcher and mentor in educational data mining and scholarly writing.</p>
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Google Scholar</a></li>
+        <li><a href="#">ORCID</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
+    </aside>
+    <section class="content">
+      <div class="post">
+        <h2>Welcome to My Blog</h2>
+        <p>This is where I share my research updates, writing tips, and academic insights.</p>
+      </div>
+      <div class="post">
+        <h2>Recent Work</h2>
+        <p>Exploring competence evaluation methods in educational data mining with practical case studies.</p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Zeyu. All rights reserved.</p>
+  </footer>
 </body>
 </html>
