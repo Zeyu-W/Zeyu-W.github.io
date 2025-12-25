@@ -54,7 +54,7 @@ body {
 }
 
 .sidebar {
-  width: 280px;
+  width: 320px;
   flex-shrink: 0;
 }
 
@@ -202,4 +202,5 @@ button:hover {
 
 .profile-address a:hover {
   text-decoration: underline;
+
 }
