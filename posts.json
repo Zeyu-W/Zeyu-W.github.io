@@ -1,12 +1,13 @@
 [
   {
     "file": "post1.md",
-    "title": "Hello World",
-    "date": "2025-01-01"
+    "title": "This is a test blog 1",
+    "date": "2025-12-25"
   },
   {
-    "file": "research-notes.md",
-    "title": "Research Notes",
-    "date": "2025-02-10"
+    "file": "post1.md",
+    "title": "This is a test blog 2",
+    "date": "2025-12-25"
   }
+
 ]
