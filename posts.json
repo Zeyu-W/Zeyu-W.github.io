@@ -1,0 +1,12 @@
+[
+  {
+    "file": "post1.md",
+    "title": "Hello World",
+    "date": "2025-01-01"
+  },
+  {
+    "file": "research-notes.md",
+    "title": "Research Notes",
+    "date": "2025-02-10"
+  }
+]
