@@ -1,6 +1,7 @@
 // ------------------------------
 // 加载博客列表（blogs.html）
 // ------------------------------
+console.log("script.js loaded");
 if (document.getElementById("blog-list")) {
   fetch("posts.json")
     .then(res => res.json())
@@ -48,3 +49,4 @@ if (document.getElementById("post-content")) {
       console.error("加载 Markdown 失败：", err);
     });
 }
+
