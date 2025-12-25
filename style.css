@@ -204,3 +204,34 @@ button:hover {
   text-decoration: underline;
 
 }
+
+/* 优化博客列表样式 */
+#blog-list {
+  list-style: none; /* 去掉小黑点 */
+  padding: 0;
+}
+
+#blog-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease; /* 增加平滑的背景变色效果 */
+}
+
+#blog-list li:hover {
+  background-color: #f9f9f9; /* 鼠标悬停时变色 */
+}
+
+#blog-list a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#blog-list .date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-left: 10px;
+}
+
