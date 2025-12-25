@@ -1,4 +1,6 @@
-// 加载博客列表
+// ------------------------------
+// 加载博客列表（blogs.html）
+// ------------------------------
 if (document.getElementById("blog-list")) {
   fetch("posts.json")
     .then(res => res.json())
@@ -20,21 +22,29 @@ if (document.getElementById("blog-list")) {
     });
 }
 
-// 渲染单篇博客
-if (document.getElementById("blog-content")) {
+// ------------------------------
+// 加载单篇博客内容（blog.html）
+// ------------------------------
+if (document.getElementById("post-content")) {
   const urlParams = new URLSearchParams(window.location.search);
-  const post = urlParams.get("post");
+  const postFile = urlParams.get("post");
 
-  if (post) {
-    fetch(`posts/${post}`)
-      .then(res => res.text())
-      .then(md => {
-        const converter = new showdown.Converter();
-        document.getElementById("blog-content").innerHTML = converter.makeHtml(md);
-
-        // 自动设置标题
-        const firstLine = md.split("\n")[0].replace(/^#\s*/, "");
-        document.getElementById("post-title").innerText = firstLine;
-      });
+  if (!postFile) {
+    document.getElementById("post-title").innerText = "Post not found";
+    return;
   }
+
+  fetch(`posts/${postFile}`)
+    .then(res => res.text())
+    .then(md => {
+      const converter = new showdown.Converter();
+      const html = converter.makeHtml(md);
+
+      document.getElementById("post-title").innerText = postFile.replace(".md", "");
+      document.getElementById("post-content").innerHTML = html;
+    })
+    .catch(err => {
+      document.getElementById("post-title").innerText = "Error loading post";
+      console.error("加载 Markdown 失败：", err);
+    });
 }
