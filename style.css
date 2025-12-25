@@ -1,0 +1,205 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f7;
+  color: #222;
+}
+
+/* Navigation Bar */
+.top-nav {
+  background: #111;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.nav-left .nav-name {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+.nav-right a:hover {
+  text-decoration: underline;
+}
+
+/* Two-column Layout */
+.layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.sidebar {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.content-area {
+  flex: 1;
+}
+
+/* Sidebar Card */
+.sidebar-card {
+  background: #f0f0f3;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Avatar */
+.avatar-md {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 16px auto;
+  border: 3px solid #e3e3ea;
+}
+
+/* Sidebar Text */
+.profile-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.profile-title {
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.profile-section-label {
+  margin-top: 16px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #777;
+}
+
+.profile-address {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 2px;
+}
+
+.profile-link {
+  margin-top: 10px;
+}
+
+.profile-link .label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #777;
+}
+
+.profile-link a {
+  font-size: 14px;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.profile-link a:hover {
+  text-decoration: underline;
+}
+
+/* Content Card */
+.content-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 40px;
+}
+
+.content-card h1,
+.content-card h2 {
+  margin-top: 0;
+}
+
+/* About Text */
+.about-text {
+  font-size: 17px;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+/* Research Interest Tags */
+.tag-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-list li {
+  background: #eef2ff;
+  color: #283593;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 18px;
+  background: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003f87;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.profile-address a {
+  color: #0056b3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.profile-address a:hover {
+  text-decoration: underline;
+}
