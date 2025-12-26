@@ -1,15 +1,58 @@
 [
+  
   {
-    "file": "post1.md",
+    "file": "post8.md",
+    "title": "2024 International Conference on Science and Engineering of Electronics (ICSEE'2024), Wuhan",
+    "date": "2024-11-25"
+  },
+
+  
+  {
+    "file": "post9.md",
+    "title": "Stipendium Hungaricum Welcome Event 2021",
+    "date": "2021-10-27"
+  },
+  {
+    "file": "post8.md",
+    "title": "It's time to start a new chapter in life. Doctoral student, Veszprem, Hungary",
+    "date": "2021-08-07"
+  },
+  {
+    "file": "post7.md",
+    "title": "I received my master's degree from Shenyang University of Technology!",
+    "date": "2021-06-23"
+  },
+  {
+    "file": "post6.md",
+    "title": "An industrial counting system based on Raspberry Pi.",
+    "date": "2020-07-31"
+  },
+  {
+    "file": "post5.md",
+    "title": "A small plugin for my mom :-)",
+    "date": "2020-03-12"
+  },
+  {
+    "file": "post4.md",
+    "title": "Items recognition based on AlexNet, achieved by MATLAB",
+    "date": "2018-09-19"
+  },
+  {
+    "file": "post3.md",
     "title": "IEEE-ISR International Conference, Shenyang",
     "date": "2018-08-26"
   },
   {
     "file": "post2.md",
-    "title": "International Neuroscience Conference, Pécs",
-    "date": "2024-01-25"
+    "title": "Daily life in the laboratory",
+    "date": "2018-03-06"
+  }，
+  {
+    "file": "post1.md",
+    "title": "Try to be outstanding",
+    "date": "2017-12-08"
   }
-
 ]
+
 
 
