@@ -1,15 +1,11 @@
-# POST2
+# International Neuroscience Conference, Pécs
 
-2025-01-01
+2024-01-25
 
-这里是正文内容。
+I went to the International Neuroscience Conference in Pécs with my supervisor Zoltan Juhasz and my lab mate Iffaf, where I met György Buzsáki, the author of "Rhythms of the Brain." 
+To my surprise, this relatively small international conference even had a Chinese company as a sponsor – RWD from Shenzhen.
 
-## 小节标题
+![IMG_2052](https://github.com/user-attachments/assets/9e85dff1-df4c-4b44-80a3-49c8a2b58ccf)
 
-- 列表项 1
-- 列表项 2
-
-### 代码示例
-
-```python
-print("Hello world")
+This is György Buzsáki's autograph:
+![IMG_1992](https://github.com/user-attachments/assets/eed4eade-b2db-471f-ab6c-1d735d52e976)
