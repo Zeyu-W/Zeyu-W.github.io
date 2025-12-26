@@ -1,15 +1,10 @@
-# POST1
+# IEEE-ISR International Conference, Shenyang
 
 2025-01-01
 
-这里是正文内容。
+This is my first time attending an international conference.
+![mmexport1535195497378](https://github.com/user-attachments/assets/30fe37b5-5f27-41a8-ba86-66fc0e276c30)
 
-## 小节标题
+![IMG_0390](https://github.com/user-attachments/assets/ee7d2db6-8c3d-4eb8-9a7a-62b08443d196)
 
-- 列表项 1
-- 列表项 2
-
-### 代码示例
-
-```python
-print("Hello world")
+I met Mr. Toshio Fukuda, the president of IEEE.
