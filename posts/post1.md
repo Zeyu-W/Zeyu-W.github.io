@@ -1,4 +1,4 @@
-# IEEE-ISR International Conference, Shenyang
+# Try to be outstanding
 
 2017-12-08
 
