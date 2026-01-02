@@ -1,28 +1,33 @@
 [
   {
-    "file": "post11.md",
+    "file": "post12.md",
     "title": "ICSEE'2024, Wuhan",
     "date": "2024-11-25"
   },
   {
-    "file": "post10.md",
+    "file": "post11.md",
     "title": "International Neuroscience Conference, Pécs",
     "date": "2024-01-25"
   },
   {
-    "file": "post9.md",
+    "file": "post10.md",
     "title": "Stipendium Hungaricum Welcome Event 2021",
     "date": "2021-10-27"
   },
   {
-    "file": "post8.md",
+    "file": "post9.md",
     "title": "It's time to start the doctoral chapter in life! Veszprém",
     "date": "2021-08-07"
   },
   {
-    "file": "post7.md",
+    "file": "post8.md",
     "title": "I received my master's degree from SUT!",
     "date": "2021-06-23"
+  },
+  {
+    "file": "post7.md",
+    "title": "Some other external projects",
+    "date": "2020-08-03"
   },
   {
     "file": "post6.md",
@@ -55,6 +60,7 @@
     "date": "2017-12-08"
   }
 ]
+
 
 
 
