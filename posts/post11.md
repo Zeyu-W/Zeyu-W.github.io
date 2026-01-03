@@ -1,6 +1,6 @@
 # XXXIV. Neumann Kollokvium, GPU DAY 2021, and Mostafa's viva
 
-2017-12-08
+2021-12-04
 
 <p style="text-align:justify;">
 The first few months of my PhD felt quite busy. In November, I attended the GPU DAY Conference, an international event organized annually by the <a href="https://wigner.hu/en" title="HUN‑REN Wigner Research Centre">HUN‑REN Wigner Research Centre</a> focusing on GPU applications—mainly in physics, especially nuclear physics simulations. Each speaker brought fascinating topics that were truly engaging. Unfortunately, I didn’t give a talk this time; I just joined as an audience member together with Prof. Juhász.<br>
