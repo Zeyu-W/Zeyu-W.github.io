@@ -1,4 +1,4 @@
-# XXXIV. Neumann Kollokvium, GPU DAY 2021, Mostafa's viva
+# XXXIV. Neumann Kollokvium, GPU DAY 2021, and Mostafa's viva
 
 2017-12-08
 
